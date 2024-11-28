@@ -75,7 +75,7 @@ print(longitud([1, 2, 3, 4]))  # Salida: 4
 
 ## 2. Árboles en Programación Lógica y Python
 
-**Representación de Árboles**
+**Representación de Árboles.**
 En programación lógica, los árboles suelen representarse como estructuras recursivas. Un árbol binario puede definirse como:
 
 Árbol vacío: representado por None.
