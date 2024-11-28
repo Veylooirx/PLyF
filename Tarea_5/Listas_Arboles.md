@@ -14,7 +14,7 @@ En este documento, exploraremos:
 
 ## 1. Listas en Programación Lógica y Python
 
-### 1.1. Representación de Listas
+### Representación de Listas
 
 En programación lógica, una lista se define como una secuencia ordenada de elementos. A menudo, las listas se representan mediante dos partes principales:
 
@@ -32,7 +32,7 @@ lista = [1, 2, 3, 4]
 head, *tail = lista  # head = 1, tail = [2, 3, 4]
 ```
 
-# Operaciones Comunes con Listas
+## Operaciones Comunes con Listas
 **Concatenacion** 
 La concatenación de listas en programación lógica se implementa de forma recursiva:
 ```python
