@@ -23,24 +23,17 @@ En programación lógica, una lista se define como una secuencia ordenada de ele
 
 Esta estructura facilita un procesamiento recursivo, ya que muchas operaciones pueden reducirse a operaciones sobre la cabeza y recursiones sobre la cola.
 
-#### Ejemplo en Prolog:
-```prolog
-% Lista completa
-[1, 2, 3, 4].
-```
-% División en cabeza y cola
-Head = 1, Tail = [2, 3, 4].
-
 En Python, las listas se representan como arreglos dinámicos. La división en Head y Tail puede hacerse mediante desempaquetado:
 
 ```python
 lista = [1, 2, 3, 4]
+
+#División en Head y Tail
+head, *tail = lista  # head = 1, tail = [2, 3, 4]
 ```
 
-# División en Head y Tail
-head, *tail = lista  # head = 1, tail = [2, 3, 4]
-
 # Operaciones Comunes con Listas
+**Concatenacion** 
 La concatenación de listas en programación lógica se implementa de forma recursiva:
 ```python
 def concatenar(lista1, lista2):
@@ -53,7 +46,7 @@ lista2 = [3, 4]
 print(concatenar(lista1, lista2))  # Salida: [1, 2, 3, 4]
 ```
 
-Pertenencia de un Elemento
+**Pertenencia de un Elemento**
 Determinar si un elemento pertenece a una lista es una operación común:
 
 ```python
@@ -82,7 +75,7 @@ print(longitud([1, 2, 3, 4]))  # Salida: 4
 
 ## 2. Árboles en Programación Lógica y Python
 
-# Representación de Árboles
+**Representación de Árboles**
 En programación lógica, los árboles suelen representarse como estructuras recursivas. Un árbol binario puede definirse como:
 
 Árbol vacío: representado por None.
@@ -100,7 +93,7 @@ arbol = Nodo(1, Nodo(2), Nodo(3))
 ```
 
 ## Operaciones Comunes con Árboles
-# Recorrido In-Orden
+**Recorrido In-Orden**
 El recorrido in-orden visita el subárbol izquierdo, luego el nodo raíz, y finalmente el subárbol derecho.
 
 ```python
@@ -112,7 +105,7 @@ def in_orden(nodo):
 # Ejemplo de uso
 print(in_orden(arbol))  # Salida: [2, 1, 3]
 ```
-# Altura del Árbol
+**Altura del Árbol**
 La altura de un árbol se define como la longitud del camino más largo desde la raíz hasta una hoja.
 
 ```python
@@ -127,14 +120,14 @@ print(altura(arbol))  # Salida: 2
 ## Diferencias entre Programación Lógica y Programación Funcional
 
 
-### 1. **Definición**
+### 1. Definición**
 
-#### **Programación Lógica**
+**Programación Lógica**
 - Paradigma basado en la lógica matemática.
 - Consiste en declarar hechos y reglas, dejando que el motor de inferencia del lenguaje encuentre soluciones.
 - Usado principalmente en la resolución de problemas, inteligencia artificial y bases de conocimiento.
 
-## 2. Enfoque
+### 2. Enfoque
 **Programación Lógica**
 Se basa en la declaración de qué se desea resolver.
 La ejecución depende de un motor de inferencia que evalúa las reglas y los hechos.
@@ -144,11 +137,11 @@ Se enfoca en cómo transformar datos utilizando funciones.
 La ejecución implica la evaluación de funciones en forma explícita.
 
 ## 3. Lenguajes Representativos
-# Programación Lógica
+**Programación Lógica**
 Prolog.
 Datalog.
 
-# Programación Funcional
+**Programación Funcional**
 Haskell.
 Lisp.
 Scala.
